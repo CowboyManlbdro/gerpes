@@ -405,3 +405,9 @@ input[type="radio"] {
 		left: -30%;
 	}
 }
+
+@media (max-width: 476px) {
+    .descr {
+		left: -60%;
+	}
+}
