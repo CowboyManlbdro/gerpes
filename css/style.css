@@ -382,7 +382,7 @@ input[type="radio"] {
     left: 50%;
     bottom: 0;
     width: 250px;
-    height: 50px;
+    height: 55px;
     font-size: 13px;
     background-color: white;
     border: 2px solid black;
@@ -402,6 +402,6 @@ input[type="radio"] {
 
 @media (max-width: 576px) {
     .descr {
-		left: -20%;
+		left: -25%;
 	}
 }
