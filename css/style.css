@@ -393,3 +393,15 @@ input[type="radio"] {
 .radio__wrapper:hover .descr {
     display: block;
 }
+
+@media (max-width: 1000px) {
+    .descr {
+		left: 0;
+	}
+}
+
+@media (max-width: 576px) {
+    .descr {
+		left: -20%;
+	}
+}
