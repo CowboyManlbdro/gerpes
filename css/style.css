@@ -372,4 +372,24 @@ input[type="radio"] {
 
 .radio__wrapper {
     margin-right: 15px;
+    position: relative;
+}
+
+.descr {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    bottom: 0;
+    width: 250px;
+    height: 50px;
+    font-size: 13px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.radio__wrapper:hover .descr {
+    display: block;
 }

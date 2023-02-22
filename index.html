@@ -42,7 +42,7 @@
                 <div id="pacient" class="form__subtitle"></div>
                 <div class="questionnaire__wrapper questionnaire__wrapper_active">
                     <div class="questionnaire">
-                        <div class="questionnaire__title">ОЦЕНКА АНАМНЕЗА</div>
+                        <div class="questionnaire__title">ОЦЕНКА ДАННЫХ АНАМНЕЗА</div>
                         <div class="question">
                             <div class="question__text question__text_align">Регистрация клинически манифестных форм инфекции Varicella zoster (ветряная оспа, опоясывающий герпес) в дебюте ювенильного артрита у детей 8 лет и старше.</div>
                             <div class="question__answer">
@@ -73,33 +73,23 @@
 
                     <div class="questionnaire">
                         <div class="questionnaire__title">ОЦЕНКА КЛИНИЧЕСКИХ ПРОЯВЛЕНИЙ</div>
-                        <div class="question">
-                            <div class="question__text">Увеличение печени</div>
+                        <div class="question  ">
+                            <div class="question__text">
+                                Явления гранулезного фарингита
+                            </div>
                             <div class="question__answer">
                                 <div class="radio__wrapper">
-                                    <input type="radio" id="pechen_yes" name="Печень" value="1">
-                                    <label for="pechen_yes">Да</label>
+                                    <input type="radio" id="faringit_ans1" name="Фарингит" value="1">
+                                    <label for="faringit_ans1">Да</label>
                                 </div>
                                 <div class="radio__wrapper">
-                                    <input type="radio" id="pechen_no" name="Печень" value="0">
-                                    <label for="pechen_no">Нет</label>
+                                    <input type="radio" id="faringit_ans2" name="Фарингит" value="0">
+                                    <label for="faringit_ans2">Нет</label>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="question question__chet">
-                            <div class="question__text">Увеличение селезенки</div>
-                            <div class="question__answer">
-                                <div class="radio__wrapper">
-                                    <input type="radio" id="selezenka_yes" name="Селезенка" value="1">
-                                    <label for="selezenka_yes">Да</label>
-                                </div>
-                                <div class="radio__wrapper">
-                                    <input type="radio" id="selezenka_no" name="Селезенка" value="0">
-                                    <label for="selezenka_no">Нет</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
                             <div class="question__text">Гипертрофия небных миндалин</div>
                             <div class="question__answer">
                                 <div class="radio__wrapper">
@@ -120,8 +110,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="question question__chet">
-                            <div class="question__text">Гипертрофия аденоидов</div>
+                        <div class="question ">
+                            <div class="question__text">Оценка степени гипертрофии аденоидов</div>
                             <div class="question__answer">
                                 <div class="radio__wrapper">
                                     <input type="radio" id="adenoid_ans1" name="Аденоиды" value="0">
@@ -137,42 +127,57 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="question">
+                        <div class="question question__chet">
                             <div class="question__text">Увеличение лимфоузлов</div>
                             <div class="question__answer">
                                 <div class="radio__wrapper">
                                     <input type="radio" id="limfouzel_ans1" name="Лимфоузлы" value="0">
-                                    <label for="limfouzel_ans1">Не увеличены</label>
+                                    <label for="limfouzel_ans1">Лимфоузлы не увеличены</label>
                                 </div>
-                                <div class="radio__wrapper">
+                                <div class="radio__wrapper" >
                                     <input type="radio" id="limfouzel_ans2" name="Лимфоузлы" value="1">
-                                    <label for="limfouzel_ans2">1 степени</label>
+                                    <label for="limfouzel_ans2">Увеличение лимфоузлов 1 степени </label>
+                                    <div class="descr">лимфатические узлы более 10 мм, 3 и более в группе в одной области</div>
                                 </div>
-                                <div class="radio__wrapper">
+                                <div class="radio__wrapper" >
                                     <input type="radio" id="limfouzel_ans3" name="Лимфоузлы" value="2">
-                                    <label for="limfouzel_ans3">2 степени</label>
+                                    <label for="limfouzel_ans3">Увеличение лимфоузлов 2 степени </label>
+                                    <div class="descr">лимфатические узлы более 10 мм, 3 и более в группе в двух областях</div>
+                                </div>
+                                <div class="radio__wrapper" >
+                                    <input type="radio" id="limfouzel_ans4" name="Лимфоузлы" value="3">
+                                    <label for="limfouzel_ans4">Увеличение лимфоузлов 3 степени </label>
+                                    <div class="descr">лимфатические узлы более 10 мм, 3 и более в группе в трех и более областях</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <div class="question__text">Увеличение печени</div>
+                            <div class="question__answer">
+                                <div class="radio__wrapper">
+                                    <input type="radio" id="pechen_yes" name="Печень" value="1">
+                                    <label for="pechen_yes">Да</label>
                                 </div>
                                 <div class="radio__wrapper">
-                                    <input type="radio" id="limfouzel_ans4" name="Лимфоузлы" value="3">
-                                    <label for="limfouzel_ans4">3 степени</label>
+                                    <input type="radio" id="pechen_no" name="Печень" value="0">
+                                    <label for="pechen_no">Нет</label>
                                 </div>
                             </div>
                         </div>
                         <div class="question question__chet question_last">
-                            <div class="question__text">
-                                Фарингит
-                            </div>
+                            <div class="question__text">Увеличение селезенки</div>
                             <div class="question__answer">
                                 <div class="radio__wrapper">
-                                    <input type="radio" id="faringit_ans1" name="Фарингит" value="1">
-                                    <label for="faringit_ans1">Есть</label>
+                                    <input type="radio" id="selezenka_yes" name="Селезенка" value="1">
+                                    <label for="selezenka_yes">Да</label>
                                 </div>
                                 <div class="radio__wrapper">
-                                    <input type="radio" id="faringit_ans2" name="Фарингит" value="0">
-                                    <label for="faringit_ans2">Нет</label>
+                                    <input type="radio" id="selezenka_no" name="Селезенка" value="0">
+                                    <label for="selezenka_no">Нет</label>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
 
                     <button class="btn btn-primary questionnaire__submit-btn" onclick="questionnaireSubmit()">Получить результат</button>
